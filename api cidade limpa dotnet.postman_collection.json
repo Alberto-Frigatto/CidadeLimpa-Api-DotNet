@@ -1,0 +1,1025 @@
+{
+	"info": {
+		"_postman_id": "849b9bb7-15c3-4c6c-bfa7-104f2e28a864",
+		"name": "api cidade limpa dotnet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26062945"
+	},
+	"item": [
+		{
+			"name": "caminhão",
+			"item": [
+				{
+					"name": "Obter todos os caminhões",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNmYzE5NmMyLWQ5ZWMtNDNiNy1hNjI2LWIzNGI4NjczZDA5MyIsIm5iZiI6MTcyOTA5NzEwNiwiZXhwIjoxNzI5MDk4MzA2LCJpYXQiOjE3MjkwOTcxMDYsImlzcyI6ImZpYXAifQ.g1Y7UgcwOlzjMB6hLhcfnVJrJR0XrOE2FOVmdu6ms7Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Caminhao",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Caminhao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obter caminhao pelo id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6ImYyMTdiOWVkLTEwNDItNGIzMy05YzUyLTI2OWJiZWJiMDQ5MyIsIm5iZiI6MTcyOTA5NTE4OSwiZXhwIjoxNzI5MDk2Mzg5LCJpYXQiOjE3MjkwOTUxODksImlzcyI6ImZpYXAifQ.Gj9fGLgDVgEQ26DVpJRWNMN4iM0yp2YaCY0izrx9ULI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Caminhao/2",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Caminhao",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar caminhao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6ImYyMTdiOWVkLTEwNDItNGIzMy05YzUyLTI2OWJiZWJiMDQ5MyIsIm5iZiI6MTcyOTA5NTE4OSwiZXhwIjoxNzI5MDk2Mzg5LCJpYXQiOjE3MjkwOTUxODksImlzcyI6ImZpYXAifQ.Gj9fGLgDVgEQ26DVpJRWNMN4iM0yp2YaCY0izrx9ULI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"modelo\": \"Volvo FH\",\r\n  \"capacidade\": 30000,\r\n  \"placa\": \"ACV4567\",\r\n  \"idRota\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cidade-limpa-production.azurewebsites.net/api/Caminhao",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-production",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Caminhao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alterar Caminhao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNmYzE5NmMyLWQ5ZWMtNDNiNy1hNjI2LWIzNGI4NjczZDA5MyIsIm5iZiI6MTcyOTA5NzEwNiwiZXhwIjoxNzI5MDk4MzA2LCJpYXQiOjE3MjkwOTcxMDYsImlzcyI6ImZpYXAifQ.g1Y7UgcwOlzjMB6hLhcfnVJrJR0XrOE2FOVmdu6ms7Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"modelo\": \"Volvo FH\",\r\n  \"capacidade\": 30000,\r\n  \"placa\": \"ABC1234\",\r\n  \"idRota\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Caminhao/22",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Caminhao",
+								"22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir caminhao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNmYzE5NmMyLWQ5ZWMtNDNiNy1hNjI2LWIzNGI4NjczZDA5MyIsIm5iZiI6MTcyOTA5NzEwNiwiZXhwIjoxNzI5MDk4MzA2LCJpYXQiOjE3MjkwOTcxMDYsImlzcyI6ImZpYXAifQ.g1Y7UgcwOlzjMB6hLhcfnVJrJR0XrOE2FOVmdu6ms7Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Caminhao/22",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Caminhao",
+								"22"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "coleta",
+			"item": [
+				{
+					"name": "Obter todas as coletas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6ImFjMWFiNTUzLTc5NDMtNDIyZS04MDdlLTkwYjkxN2MxZmQ4ZSIsIm5iZiI6MTcyOTA5ODU2NywiZXhwIjoxNzI5MDk5NzY3LCJpYXQiOjE3MjkwOTg1NjcsImlzcyI6ImZpYXAifQ.Fud88c6TBCPeSfDCfulsykqzzlXG9xhs4btKOt9XrtQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Coleta",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Coleta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obter coleta pelo id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6ImFjMWFiNTUzLTc5NDMtNDIyZS04MDdlLTkwYjkxN2MxZmQ4ZSIsIm5iZiI6MTcyOTA5ODU2NywiZXhwIjoxNzI5MDk5NzY3LCJpYXQiOjE3MjkwOTg1NjcsImlzcyI6ImZpYXAifQ.Fud88c6TBCPeSfDCfulsykqzzlXG9xhs4btKOt9XrtQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Coleta/21",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Coleta",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar coleta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNmYzE5NmMyLWQ5ZWMtNDNiNy1hNjI2LWIzNGI4NjczZDA5MyIsIm5iZiI6MTcyOTA5NzEwNiwiZXhwIjoxNzI5MDk4MzA2LCJpYXQiOjE3MjkwOTcxMDYsImlzcyI6ImZpYXAifQ.g1Y7UgcwOlzjMB6hLhcfnVJrJR0XrOE2FOVmdu6ms7Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCaminhao\": 2,\r\n    \"idLixeira\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cidade-limpa-production.azurewebsites.net/api/Coleta",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-production",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Coleta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir coleta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6ImFjMWFiNTUzLTc5NDMtNDIyZS04MDdlLTkwYjkxN2MxZmQ4ZSIsIm5iZiI6MTcyOTA5ODU2NywiZXhwIjoxNzI5MDk5NzY3LCJpYXQiOjE3MjkwOTg1NjcsImlzcyI6ImZpYXAifQ.Fud88c6TBCPeSfDCfulsykqzzlXG9xhs4btKOt9XrtQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Coleta/21",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Coleta",
+								"21"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "lixeira",
+			"item": [
+				{
+					"name": "Obter todas as lixeiras",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNjODNiOTZiLTc0OTctNDQ1Yi1hMGFhLTI5OGNmZjkzOGEyNyIsIm5iZiI6MTcyOTEwMDU5MywiZXhwIjoxNzI5MTAxNzkzLCJpYXQiOjE3MjkxMDA1OTMsImlzcyI6ImZpYXAifQ.f9WD3K9QcgVZo0U-qpxjXg8XkRTltnK6jh5wfvJOzB4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Lixeira",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Lixeira"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obter lixeira pelo Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNjODNiOTZiLTc0OTctNDQ1Yi1hMGFhLTI5OGNmZjkzOGEyNyIsIm5iZiI6MTcyOTEwMDU5MywiZXhwIjoxNzI5MTAxNzkzLCJpYXQiOjE3MjkxMDA1OTMsImlzcyI6ImZpYXAifQ.f9WD3K9QcgVZo0U-qpxjXg8XkRTltnK6jh5wfvJOzB4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Lixeira/3",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Lixeira",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar lixeira",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNjODNiOTZiLTc0OTctNDQ1Yi1hMGFhLTI5OGNmZjkzOGEyNyIsIm5iZiI6MTcyOTEwMDU5MywiZXhwIjoxNzI5MTAxNzkzLCJpYXQiOjE3MjkxMDA1OTMsImlzcyI6ImZpYXAifQ.f9WD3K9QcgVZo0U-qpxjXg8XkRTltnK6jh5wfvJOzB4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"localizacao\": \"Rua monte sião\",\r\n    \"capacidade\": 1000,\r\n    \"ocupacao\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Lixeira",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Lixeira"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar lixeira",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNjODNiOTZiLTc0OTctNDQ1Yi1hMGFhLTI5OGNmZjkzOGEyNyIsIm5iZiI6MTcyOTEwMDU5MywiZXhwIjoxNzI5MTAxNzkzLCJpYXQiOjE3MjkxMDA1OTMsImlzcyI6ImZpYXAifQ.f9WD3K9QcgVZo0U-qpxjXg8XkRTltnK6jh5wfvJOzB4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"localizacao\": \"Rua alterada\",\r\n    \"capacidade\": 1000,\r\n    \"ocupacao\": 0.57\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Lixeira/3",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Lixeira",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir Lixeira",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNjODNiOTZiLTc0OTctNDQ1Yi1hMGFhLTI5OGNmZjkzOGEyNyIsIm5iZiI6MTcyOTEwMDU5MywiZXhwIjoxNzI5MTAxNzkzLCJpYXQiOjE3MjkxMDA1OTMsImlzcyI6ImZpYXAifQ.f9WD3K9QcgVZo0U-qpxjXg8XkRTltnK6jh5wfvJOzB4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Lixeira/21",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Lixeira",
+								"21"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "lixeira para coleta",
+			"item": [
+				{
+					"name": "Obter todas as lixeiras para coleta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNjODNiOTZiLTc0OTctNDQ1Yi1hMGFhLTI5OGNmZjkzOGEyNyIsIm5iZiI6MTcyOTEwMDU5MywiZXhwIjoxNzI5MTAxNzkzLCJpYXQiOjE3MjkxMDA1OTMsImlzcyI6ImZpYXAifQ.f9WD3K9QcgVZo0U-qpxjXg8XkRTltnK6jh5wfvJOzB4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/LixeiraParaColeta",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"LixeiraParaColeta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obter lixeira para coleta pelo Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNjODNiOTZiLTc0OTctNDQ1Yi1hMGFhLTI5OGNmZjkzOGEyNyIsIm5iZiI6MTcyOTEwMDU5MywiZXhwIjoxNzI5MTAxNzkzLCJpYXQiOjE3MjkxMDA1OTMsImlzcyI6ImZpYXAifQ.f9WD3K9QcgVZo0U-qpxjXg8XkRTltnK6jh5wfvJOzB4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/LixeiraParaColeta/1",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"LixeiraParaColeta",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar lixeira para coleta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNjODNiOTZiLTc0OTctNDQ1Yi1hMGFhLTI5OGNmZjkzOGEyNyIsIm5iZiI6MTcyOTEwMDU5MywiZXhwIjoxNzI5MTAxNzkzLCJpYXQiOjE3MjkxMDA1OTMsImlzcyI6ImZpYXAifQ.f9WD3K9QcgVZo0U-qpxjXg8XkRTltnK6jh5wfvJOzB4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idLixeira\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/LixeiraParaColeta",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"LixeiraParaColeta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar lixeira para coleta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNjODNiOTZiLTc0OTctNDQ1Yi1hMGFhLTI5OGNmZjkzOGEyNyIsIm5iZiI6MTcyOTEwMDU5MywiZXhwIjoxNzI5MTAxNzkzLCJpYXQiOjE3MjkxMDA1OTMsImlzcyI6ImZpYXAifQ.f9WD3K9QcgVZo0U-qpxjXg8XkRTltnK6jh5wfvJOzB4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ativo\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/LixeiraParaColeta/21",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"LixeiraParaColeta",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir lixeira para coleta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNjODNiOTZiLTc0OTctNDQ1Yi1hMGFhLTI5OGNmZjkzOGEyNyIsIm5iZiI6MTcyOTEwMDU5MywiZXhwIjoxNzI5MTAxNzkzLCJpYXQiOjE3MjkxMDA1OTMsImlzcyI6ImZpYXAifQ.f9WD3K9QcgVZo0U-qpxjXg8XkRTltnK6jh5wfvJOzB4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/LixeiraParaColeta/21",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"LixeiraParaColeta",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pesquisar por ativo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjaWRhZGVMaW1wYSIsInN1YiI6ImFsYmVydG9AZ21haWwuY29tIiwiZXhwIjoxNzE2ODUwMDk1fQ._YSPEUl_iOxavfGxPdPtzO6N-0rsfmNLDfQwieUpfzM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/lixeirasParaColeta?ativo=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"lixeirasParaColeta"
+							],
+							"query": [
+								{
+									"key": "ativo",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pesquisar por id lixeira",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjaWRhZGVMaW1wYSIsInN1YiI6ImFsYmVydG9AZ21haWwuY29tIiwiZXhwIjoxNzE2ODUwMDk1fQ._YSPEUl_iOxavfGxPdPtzO6N-0rsfmNLDfQwieUpfzM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/lixeirasParaColeta?idLixeira=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"lixeirasParaColeta"
+							],
+							"query": [
+								{
+									"key": "idLixeira",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "rotas",
+			"item": [
+				{
+					"name": "Criar rota",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjNjODNiOTZiLTc0OTctNDQ1Yi1hMGFhLTI5OGNmZjkzOGEyNyIsIm5iZiI6MTcyOTEwMDU5MywiZXhwIjoxNzI5MTAxNzkzLCJpYXQiOjE3MjkxMDA1OTMsImlzcyI6ImZpYXAifQ.f9WD3K9QcgVZo0U-qpxjXg8XkRTltnK6jh5wfvJOzB4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"horarioInicio\": \"12:00\",\r\n    \"horarioFim\": \"17:00\",\r\n    \"listaPontosColeta\": [\r\n        \"Rua X\",\r\n        \"Rua Y\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Rota",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Rota"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obter todas as rotas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjdjMzdmNmY5LWFhYjEtNGNjOS05OWVkLTAxNjE0YWEzYWUyMyIsIm5iZiI6MTcyOTEwMTg0OSwiZXhwIjoxNzI5MTAzMDQ5LCJpYXQiOjE3MjkxMDE4NDksImlzcyI6ImZpYXAifQ.tVQL5KyGvrKGwqRv2woLW5W1-_RxlEf-mjpEuI7VYn0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Rota",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Rota"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obter rota pelo Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjdjMzdmNmY5LWFhYjEtNGNjOS05OWVkLTAxNjE0YWEzYWUyMyIsIm5iZiI6MTcyOTEwMTg0OSwiZXhwIjoxNzI5MTAzMDQ5LCJpYXQiOjE3MjkxMDE4NDksImlzcyI6ImZpYXAifQ.tVQL5KyGvrKGwqRv2woLW5W1-_RxlEf-mjpEuI7VYn0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Rota/2",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Rota",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar rota",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjdjMzdmNmY5LWFhYjEtNGNjOS05OWVkLTAxNjE0YWEzYWUyMyIsIm5iZiI6MTcyOTEwMTg0OSwiZXhwIjoxNzI5MTAzMDQ5LCJpYXQiOjE3MjkxMDE4NDksImlzcyI6ImZpYXAifQ.tVQL5KyGvrKGwqRv2woLW5W1-_RxlEf-mjpEuI7VYn0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idRota\": 2,\r\n    \"horarioInicio\": \"12:00\",\r\n    \"horarioFim\": \"19:00\",\r\n    \"listaPontosColeta\": [\r\n        \"Rua X\",\r\n        \"Rua Y\",\r\n        \"Rua Z\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Rota/2",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Rota",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excluir rota",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsYmVydG9AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaGFzaCI6IjdjMzdmNmY5LWFhYjEtNGNjOS05OWVkLTAxNjE0YWEzYWUyMyIsIm5iZiI6MTcyOTEwMTg0OSwiZXhwIjoxNzI5MTAzMDQ5LCJpYXQiOjE3MjkxMDE4NDksImlzcyI6ImZpYXAifQ.tVQL5KyGvrKGwqRv2woLW5W1-_RxlEf-mjpEuI7VYn0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Rota/2",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Rota",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "usuário",
+			"item": [
+				{
+					"name": "criar usuario",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"teste@gmail.com\",\r\n    \"senha\": \"Windows#123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Usuario",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"alberto@gmail.com\",\r\n    \"senha\": \"Windows#123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cidade-limpa-staging.azurewebsites.net/api/Auth/login",
+							"protocol": "https",
+							"host": [
+								"cidade-limpa-staging",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
